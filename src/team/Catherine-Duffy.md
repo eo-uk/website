@@ -1,6 +1,6 @@
 ---
 name: Catherine Duffy
-position: Data Scientist
+position: Data Analyst
 linkedin: https://www.linkedin.com/in/catherine-duffy-b396b471/
 date: 2021-06-25
 ---
