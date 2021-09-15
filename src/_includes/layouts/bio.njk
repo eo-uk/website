@@ -9,7 +9,11 @@ tags:
 
 <section class="[ bio-block ] [ pad-top-900 pad-bottom-900 bg-dark color-primary-light ]">
   <div class="wrapper wrapper--short">
-      {% set image = '/team/' ~ name | firstWord ~ '.jpg' %}
+      {% if bio.data.image %}
+        {% set image = '/team/' ~ bio.data.image ~ '.jpg' %}
+      {% else %}
+        {% set image = '/team/' ~ bio.data.name | firstWord ~ '.jpg' %}
+      {% endif %}
       <img src="{% cloudinary image, 'w_128,h_128,c_fill,d_avatar.svg' %}" srcset="{% cloudinary image, 'w_128,h_128,c_fill,dpr_2.0,d_avatar.svg' %} 2x" class="bio__image" alt="{{ "Photo of" | i18n }} {{ name }}"> 
     
       <div class="bio-block__overview">
