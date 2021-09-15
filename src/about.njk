@@ -158,7 +158,11 @@ metaDesc: When location matters, organisations turn to us first. We’re driven 
   <div class="wrapper">
     <ul class="[ bio-grid ] [ auto-grid ]">
       {% for bio in collections.bio %}
-        {% set image = '/team/' ~ bio.data.name | firstWord ~ '.jpg' %}
+        {% if bio.data.image %}
+          {% set image = '/team/' ~ bio.data.image ~ '.jpg' %}
+        {% else %}
+          {% set image = '/team/' ~ bio.data.name | firstWord ~ '.jpg' %}
+        {% endif %}
         <li class="bio">
           <img src="{% cloudinary image, 'w_128,h_128,c_fill,d_avatar.svg' %}" srcset="{% cloudinary image, 'w_128,h_128,c_fill,dpr_2.0,d_avatar.svg' %} 2x" class="bio__image" alt="{{ "Photo of" | i18n }} {{ bio.data.name }}"> 
           <h3 class="bio__title"><a href="{{ bio.url }}" class="breakout-button">{{ bio.data.name }}</a></h3>
