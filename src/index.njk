@@ -142,12 +142,53 @@ hideAwards: true
           </div>
         </div>
       {% endfor %}
-      <script src="/js/components/tabs.js" defer></script>
     </div>
   </div>
 </section>
 
-<section id="mapp" class="bg-cream-light pad-top-900">
+<section id="mobility" class="bg-cream-light pad-top-900">
+  <div class="wrapper">
+    <div class="text-align-center gap-bottom-700">
+      <div class="measure-compact">
+        <h2 class="eyebrow">{{ "Mobility Data" | i18n }}</h2>
+        <h3 class="text-700">{{ "Movement patterns of people using mobility data" | i18n }}</h3>
+        <p>{{ "Granular level understanding of activity, anywhere in the world, with the ability to show pitch, catchments, and changes over time" | i18n }}</p>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="text-align-center display-none md:display-block">
+        <ul class="segment-control" role="tablist">
+          {% for item in mobility.items %}
+            <li role="tab"{% if loop.first %} aria-selected="true"{% endif %} data-tab="{{ item.title | slug }}">
+              <button>{{ item.title | i18n }}</button>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      {% for item in mobility.items %}
+        <div data-tab-id="{{ item.title | slug }}" role="tabpanel" aria-hidden="{% if loop.first %}false{% else %}true{% endif %}" aria-label="{{ item.title }}">
+          <div class="[ window ] [ display-none md:display-block ]">
+            <div class="window__toolbar">
+              <span class="window__toolbar-item"></span>
+              <span class="window__toolbar-item"></span>
+              <span class="window__toolbar-item"></span>
+            </div>
+            <div class="window__video">
+              <video src="https://res.cloudinary.com/dvx8vwneg/video/upload/q_auto:eco/website/mobility/{{ item.video }}" muted autoplay playsinline loop></video>
+            </div>
+          </div>
+          <div class="text-align-center pad-bottom-400 display-block md:display-none">
+            <a href="https://geolytix.xyz/geodata?locale=London" class="button" target="_blank" rel="noopener noreferrer">Open maps &rarr;</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="mapp" class="pad-top-900">
   <div class="wrapper">
     <div class="text-align-center gap-bottom-800">
       <div class="measure-compact">

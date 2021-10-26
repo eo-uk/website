@@ -1,31 +1,34 @@
-const tabs = document.querySelector('.tabs');
-const segments = tabs.querySelectorAll('[role="tab"]');
+const tabs = document.querySelectorAll('.tabs');
 
-const resetSegment = () => {
-  tabs.querySelector('[role="tab"][aria-selected="true"]').removeAttribute('aria-selected');
-};
+tabs.forEach((element) => {
+  const segments = element.querySelectorAll('[role="tab"]');
 
-const setActiveSegment = (segment) => {
-  resetSegment();
-  segment.setAttribute('aria-selected', true);
-};
+  const resetSegment = () => {
+    element.querySelector('[role="tab"][aria-selected="true"]').removeAttribute('aria-selected');
+  };
 
-const resetTab = () => {
-  tabs.querySelector('[role="tabpanel"][aria-hidden="false"]').setAttribute('aria-hidden', true);
-};
+  const setActiveSegment = (segment) => {
+    resetSegment();
+    segment.setAttribute('aria-selected', true);
+  };
 
-const setActiveTab = (tabID) => {
-  resetTab();
+  const resetTab = () => {
+    element.querySelector('[role="tabpanel"][aria-hidden="false"]').setAttribute('aria-hidden', true);
+  };
 
-  const tab = tabs.querySelector(`[data-tab-id="${tabID}"]`);
-  tab.setAttribute('aria-hidden', false);
-};
+  const setActiveTab = (tabID) => {
+    resetTab();
 
-segments.forEach((segment) => {
-  segment.addEventListener('click', (e) => {
-    e.preventDefault();
+    const tab = element.querySelector(`[data-tab-id="${tabID}"]`);
+    tab.setAttribute('aria-hidden', false);
+  };
 
-    setActiveSegment(e.currentTarget);
-    setActiveTab(e.currentTarget.getAttribute('data-tab'));
+  segments.forEach((segment) => {
+    segment.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      setActiveSegment(e.currentTarget);
+      setActiveTab(e.currentTarget.getAttribute('data-tab'));
+    });
   });
 });
