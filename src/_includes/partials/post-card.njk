@@ -1,7 +1,7 @@
 <li class="card">
   <img class="card__cover" src="{% cloudinaryFetch post.feature_image, 'w_406,h_270,c_fill' %}" srcset="{% cloudinaryFetch post.feature_image, 'w_406,h_270,c_fill,dpr_2.0' %} 2x" loading="lazy" alt="{{ post.title }}">
   <div class="card__inner">
-    <h2 class="text-500 gap-bottom-100"><a href="{{ post.url }}" class="breakout-button">{{ post.title }}</a></h2>
+    <h2 class="text-500 gap-bottom-100"><a href="{{ post.url }}" class="breakout-button" target="_blank">{{ post.title }}</a></h2>
     <p class="text-300 weight-mid">{{ post.published_at | date }}</p>
 
     {% if post.custom_excerpt %}
