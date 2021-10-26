@@ -17,8 +17,8 @@
       "telephone": "+44 (0) 207 415 7043",
       "email": "info@geolytix.com",
       "location": {
-        "lat": "53.79874768187361",
-        "lng": "-1.5495934282737742",
+        "lat": "53.798350",
+        "lng": "-1.553130",
         "zoom": "18"
       }
     },
@@ -72,12 +72,12 @@
     },
     {
       "title": "Johannesburg",
-      "address": "Spaces, 377 Rivonia Blvd, Rivonia, Johannesburg, 2128, South Africa",
+      "address": "13 pont road, Bryanston, Johannesburg, 2191, South Africa",
       "telephone": "+44 (0) 207 415 7043",
       "email": "info@geolytix.com",
       "location": {
-        "lat": "-26.0491394",
-        "lng": "28.0592783",
+        "lat": "-26.050910",
+        "lng": "28.043050",
         "zoom": "18"
       }
     }
