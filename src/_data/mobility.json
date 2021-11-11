@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "title": "UK",
+      "video": "london.mp4"
+    },
+    {
+      "title": "Europe",
+      "video": "poland.mp4"
+    },
+    {
+      "title": "Asia",
+      "video": "thailand.mp4"
+    }
+  ]
+}
