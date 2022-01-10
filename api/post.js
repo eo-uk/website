@@ -1,8 +1,36 @@
 const fetch = require('isomorphic-fetch');
 
+const checkRecaptcha = async (response, remoteAddress) => {
+  if (response === undefined || response === '' || response === null) {
+    return false;
+  }
+
+  const secretKey = process.env.GOOGLE_RECAPTCHA_SECRET_KEY;
+
+  const verificationUrl = 'https://www.google.com/recaptcha/api/siteverify?secret=' + secretKey + '&response=' + response + '&remoteip=' + remoteAddress;
+  console.log(verificationUrl);
+
+  const data = await fetch(verificationUrl);
+  const json = await data.json();
+
+  if (json.success !== undefined && !json.success) {
+    return false;
+  }
+
+  return true;
+};
+
 module.exports = async (req, res) => {
   const { body } = req;
   const { formID } = body;
+
+  if (body['recaptcha-enabled']) {
+    const recaptcha = await checkRecaptcha(body['g-recaptcha-response'], req.connection.remoteAddress);
+
+    if (!recaptcha) {
+      return res.end('Invalid recaptcha');
+    }
+  }
 
   if (body.url && body.url !== '') {
     return res.end('Invalid form');

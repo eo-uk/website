@@ -38,14 +38,20 @@ metaDesc: Get in touch to see how GEOLYTIX can help you make better network stra
           <label for="message">{{ "Message" | i18n }}<span class="color-red">*</span></label>
           <textarea id="message" name="message" required></textarea>
         </div>
+
+        <div class="form-field form-field--large">
+          <div class="g-recaptcha" data-sitekey="6Lcu9_AdAAAAAMENzURjPW37aYOjiZJry5ssBwqy"></div>
+        </div>
       </div>
       <div class="[ card-form__actions ] [ bg-regular-gray pad-400 ]">
         <div class="checkbox-field">
           <input type="checkbox" name="marketing" id="marketing" value="true">
           <label for="marketing" class="text-300 weight-light">{{ "We’d love to let you know when we release new open data and update you with all the exciting projects we’re working on" | i18n }}</label>
         </div>
+        
         <input type="text" class="visually-hidden" name="url" aria-hidden="true" autocomplete="off">
         <input type="hidden" name="formID" value="75c9a40b-490c-4e20-9fa9-ffccf3cf0d40">
+        <input type="hidden" name="recaptcha-enabled" value="true">
         <button type="submit" class="button">{{ "Send Enquiry" | i18n }}</button>
       </div>
     </form>
@@ -82,7 +88,5 @@ metaDesc: Get in touch to see how GEOLYTIX can help you make better network stra
         </div>
       {% endfor %}
     </div>
-
-    <script src="/js/components/tabs.js" defer></script>
   </div>
 </section>
