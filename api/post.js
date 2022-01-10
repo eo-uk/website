@@ -40,7 +40,7 @@ module.exports = async (req, res) => {
 
   const fields = Object.keys(body)
     .flatMap((key) => {
-      if (key !== 'formID') {
+      if (key !== 'formID' && key !== 'recaptcha-enabled') {
         return {
           name: key,
           value: body[key],
