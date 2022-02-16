@@ -1,7 +1,7 @@
 ---
 name: Coco Lin
 position: Project Director
-linkedin: https://www.linkedin.com/in/coco-ke-lin-mrics-6561945b
+linkedin: https://www.linkedin.com/in/coco-ke-lin-6561945b/
 date: 2020-01-20
 ---
 
