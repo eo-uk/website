@@ -15,6 +15,11 @@ module.exports = [
     root: 'https://geolytix.pl',
   },
   {
+    title: 'Français',
+    code: 'fr', // ISO 639-1
+    root: 'https://geolytix.fr',
+  },
+  {
     title: '中文',
     code: 'zh', // ISO 639-1
     root: 'https://geolytix.cn',
