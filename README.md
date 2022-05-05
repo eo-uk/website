@@ -4,7 +4,10 @@
 
 ## Documentation
 
-Documentation coming soon.
+In order to build and serve the site locally please use following eleventy command.
+```
+LOCALE=de npx @11ty/eleventy --input=src --output=dist --serve --port=8080
+```
 
 ## Contributing
 

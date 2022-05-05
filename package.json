@@ -23,7 +23,7 @@
   "license": "GPL-2.0 AND MIT",
   "homepage": "https://github.com/bly-th/eleventy",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-plugin-rss": "^1.1.0",
     "@bly-th/css": "^0.1.5",
     "@tryghost/content-api": "^1.4.12",
