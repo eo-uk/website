@@ -1,6 +1,6 @@
 ---
 name: Samantha Colebatch
-position: Commercial Director
+position: Director of Strategy & NPD
 linkedin: https://www.linkedin.com/in/samantha-colebatch-hodkinson-09a30564
 date: 2020-01-04
 ---

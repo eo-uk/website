@@ -1,6 +1,6 @@
 ---
 name: Rachel Wyles
-position: Associate
+position: Location Planning Partner
 linkedin: https://www.linkedin.com/in/rachel-wyles/
 date: 2021-09-20
 ---

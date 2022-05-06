@@ -1,6 +1,6 @@
 ---
 name: Dan Dungate
-position: Data Scientist
+position: Head of Data Science
 linkedin: https://www.linkedin.com/in/dan-dungate-2943b474
 date: 2020-01-15
 ---

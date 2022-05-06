@@ -1,6 +1,6 @@
 ---
 name: Matt Martin
-position: Associate
+position: Director of Customer & Delivery
 linkedin: https://uk.linkedin.com/in/matthew-martin-112805ab
 date: 2020-01-18
 image: matt_martin

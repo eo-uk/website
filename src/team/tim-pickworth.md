@@ -1,6 +1,6 @@
 ---
 name: Tim Pickworth
-position: Associate
+position: Business Development Director
 date: 2020-02-20
 ---
 

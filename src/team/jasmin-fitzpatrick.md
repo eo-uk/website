@@ -1,6 +1,6 @@
 ---
 name: Jasmin Fitzpatrick
-position: Product Owner - MAPP
+position: Head of Product (MAPP)
 linkedin: https://www.linkedin.com/in/jasminfitzpatrick
 date: 2020-01-11
 ---

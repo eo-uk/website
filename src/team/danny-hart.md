@@ -1,6 +1,6 @@
 ---
 name: Danny Hart
-position: Data Scientist
+position: Head of Data Science
 linkedin: https://www.linkedin.com/in/daniel-hart-87058b36
 date: 2020-01-17
 ---

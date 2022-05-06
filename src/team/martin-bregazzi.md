@@ -1,6 +1,6 @@
 ---
 name: Martin Bregazzi
-position: Associate
+position: Location Planning Partner
 linkedin: https://www.linkedin.com/in/martin-bregazzi-8345835b
 date: 2020-01-13
 ---

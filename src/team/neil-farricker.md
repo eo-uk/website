@@ -1,6 +1,6 @@
 ---
 name: Neil Farricker
-position: Director of Data Science
+position: Founding Director
 linkedin: https://www.linkedin.com/in/neil-farricker-6566a338
 date: 2020-01-03
 ---

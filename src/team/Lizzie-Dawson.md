@@ -1,6 +1,6 @@
 ---
 name: Lizzie Dawson
-position: Associate
+position: Location Planning Partner
 linkedin: https://www.linkedin.com/in/lizzie-dawson-889ab246/
 date: 2021-04-26
 ---

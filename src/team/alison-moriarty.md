@@ -1,6 +1,6 @@
 ---
 name: Alison Moriarty
-position: Associate
+position: Location Planning Partner
 linkedin: https://www.linkedin.com/in/alison-moriarty-n4
 date: 2020-01-28
 ---

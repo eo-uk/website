@@ -1,6 +1,6 @@
 ---
 name: Imogen Francis
-position: Associate 
+position: Location Planning Partner 
 linkedin: https://www.linkedin.com/in/imogen-francis-897941184/
 date: 2021-09-13
 ---
