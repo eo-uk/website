@@ -11,4 +11,4 @@ module.exports = {
       return i18n(data.metaDesc);
     },
   },
-};i18n(data.title)
+};
