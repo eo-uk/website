@@ -12,3 +12,7 @@ LOCALE=de npx @11ty/eleventy --input=src --output=dist --serve --port=8080
 ## Contributing
 
 If you're interested in contributing to Blyth Eleventy Starter, please submit a pull request.
+
+## New blog articles
+
+May 18 - Our Team Geolytix France
