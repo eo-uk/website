@@ -1,6 +1,7 @@
 ---
 name: Tim Pickworth
 position: Business Development Director
+linkedin: https://www.linkedin.com/in/tim-pickworth/
 date: 2020-02-20
 ---
 

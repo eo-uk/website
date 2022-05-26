@@ -1,6 +1,7 @@
 ---
 name: Ben Purple
 position: Director
+linkedin: https://www.linkedin.com/in/ben-purple-b85b5422/
 date: 2020-01-06
 ---
 
