@@ -1,6 +1,7 @@
 ---
 name: Aimee Thomason
 position: Data Analyst
+linkedin: https://www.linkedin.com/in/aimee-thomason-393765204/
 image: aimee_thomason
 ---
 

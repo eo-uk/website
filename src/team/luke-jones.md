@@ -1,6 +1,7 @@
 ---
 name: Luke Jones
 position: Data Analyst
+linkedin: https://www.linkedin.com/in/luke-jones-570ba123b/
 image: luke_jones
 ---
 
