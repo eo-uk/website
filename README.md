@@ -17,3 +17,4 @@ If you're interested in contributing to Blyth Eleventy Starter, please submit a 
 
 May 18 - Our Team Geolytix France
 6th Oct 22 - New Blogs
+25th Oct 22 - New Blogs
