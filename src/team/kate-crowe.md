@@ -1,6 +1,7 @@
 ---
 name: Kate Crowe
 position: Location Planning Partner
+linkedin: https://www.linkedin.com/in/kate-crowe/
 image: kate_crowe
 ---
 
