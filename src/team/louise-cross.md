@@ -1,6 +1,6 @@
 ---
 name: Louise Cross
-position: Data BD Director
+position: Product Owner of Data
 linkedin: https://www.linkedin.com/in/louise-cross-7b70916b
 twitter: https://twitter.com/WheresLou
 date: 2020-01-09
