@@ -1,6 +1,6 @@
 ---
 name: Simon Leech
-position: Data Analyst / Developer 
+position: Senior Config Analyst
 linkedin: https://www.linkedin.com/in/simon-leech/
 date: 2021-10-11
 image: simon_leech
