@@ -3,6 +3,7 @@ name: Therese Branch
 position: Data Analyst
 linkedin: https://www.linkedin.com/in/theresebranch/
 image: therese_branch
+date: 2022-06-13
 ---
 
 Therese joined the New Product Development team at Geolytix in June 2022 on a sandwich placement. She is currently on the MSc Data Science programme at Manchester Metropolitan University. 

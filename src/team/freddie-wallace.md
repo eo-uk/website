@@ -3,6 +3,7 @@ name: Freddie Wallace
 position: Data Analyst
 linkedin: https://www.linkedin.com/in/freddie-wallace-6961131b5/
 image: freddie_wallace
+date: 2022-07-18
 ---
 
 Freddie joined Geolytix in July 2022 for a placement year as part of his BA Geography with Quantitative Methods course at the University of Leeds. 

@@ -3,6 +3,7 @@ name: Lucy Hardwick
 position: Location Planning Partner
 linkedin: https://www.linkedin.com/in/lucy-hardwick-0a2a13249/
 image: lucy_hardwick
+date: 2022-08-08
 ---
 
 Lucy studied Geography at the University of Northumbria before working as a Location Planner at Sainsburys for 8 years, where she supported investment decisions for new and existing space.

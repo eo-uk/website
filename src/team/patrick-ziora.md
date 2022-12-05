@@ -3,6 +3,7 @@ name: Patrick Zirora
 position: Data Analyst
 linkedin: https://www.linkedin.com/in/patrick-zirora-88a06287/
 image: patrick_zirora
+date: 2022-07-18
 ---
 
 Patrick started at Geolytix in 2022 as an industrial placement student. He is currently a Geography with Quantitative Methods student at the University of Leeds. The course allows him to focus on using geographical methods to analyse the relationships between societies, places and environments, emphasising quantitative approaches.  

@@ -3,6 +3,7 @@ name: Aimee Thomason
 position: Data Analyst
 linkedin: https://www.linkedin.com/in/aimee-thomason-393765204/
 image: aimee_thomason
+date: 2022-03-14
 ---
 
 Aimee joined Geolytix in March 2022, shortly after completing her MSc in Geographical Information Systems at the University of Leeds. Whilst at university, Aimee’s research project focused on developing a geodemographic classification framework of digital capabilities, for which she achieved 1st place in the SLA Student Awards 2021.
