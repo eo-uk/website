@@ -2,6 +2,7 @@
 name: Will Johnson
 position: Config Analyst
 linkedin: https://www.linkedin.com/in/william-johnson-aa1503197/
+image: will_johnson
 date: 2022-12-12
 ---
 
