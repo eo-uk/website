@@ -2,7 +2,7 @@
 name: Brendon Edwards
 position: Client Analysis Manager
 linkedin: https://www.linkedin.com/in/brendonedwards/
-image: 
+image: brendon-edwards
 date: 2023-03-01
 ---
 
