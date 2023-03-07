@@ -1,6 +1,6 @@
 ---
 name: Freddie Wallace
-position: Data Analyst
+position: Config Analyst
 linkedin: https://www.linkedin.com/in/freddie-wallace-6961131b5/
 image: freddie_wallace
 date: 2022-07-18
