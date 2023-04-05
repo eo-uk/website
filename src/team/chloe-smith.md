@@ -2,6 +2,7 @@
 name: Chloe Smith
 position: Data Analyst
 linkedin: https://www.linkedin.com/in/chloe-smith-a10464174/
+image: chloe_smith
 date: 2022-11-30
 
 ---
