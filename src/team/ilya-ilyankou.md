@@ -1,6 +1,6 @@
 ---
 name: Ilya Ilyankou
-position: Senior Data Analyst
+position: Data Engineer
 linkedin: https://www.linkedin.com/in/ilyankou/
 twitter: https://twitter.com/ilyankou
 image: ilya_ilyankou
