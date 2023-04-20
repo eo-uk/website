@@ -28,7 +28,7 @@ eleventyComputed:
   </div>
 </section>
 
-<section class="pad-top-900 pad-bottom-900">
+<section class="post-body pad-top-900 pad-bottom-900">
   <div class="wrapper wrapper--compact">
     {{ post.html | safe }}
   </div>
@@ -57,4 +57,12 @@ eleventyComputed:
     <meta itemprop="name" content="{{ title }} – {{ site.title }}">
     <meta itemprop="description" content="{{ post.excerpt }}">
     <meta itemprop="image" content="{{ post.feature_image }}">
+{%- endblock -%}
+
+{%- block extrajs -%}
+  <script>
+    document.querySelectorAll(".post-body a").forEach((el)=>{
+      el.setAttribute("target", "_blank");
+    })
+  </script>
 {%- endblock -%}
