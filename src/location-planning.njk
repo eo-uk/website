@@ -1,0 +1,391 @@
+---
+layout: layouts/default.njk
+title: Location Planning
+metaDesc: Location Planning is the process of helping you ensure your brand is in the right locations.
+---
+
+<style>
+  .split-pair.reverse {
+    flex-direction: row-reverse;
+  }
+  .measure-short {
+    padding: 1em;
+  }
+  .image-container {
+    padding: 0;
+  }
+  .large-text {
+    font-size: 1.5em;
+  }
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    counter-reset: flexnumbers;
+  }
+  .flex .flex-item:before {
+    counter-increment: flexnumbers;
+    content: '0' counter(flexnumbers);
+    font-size: var(--text-700);
+  }
+  .flex.cols-3 .flex-item {
+      width: 33%;
+  }
+  .flex.cols-2 .flex-item {
+      width: 50%;
+  }
+  .flex-item__title {
+      font-size: var(--text-400);
+      margin-bottom: 0.5rem;
+  }
+  .flex-item__icon {
+      margin-bottom: 1rem;
+  }
+  .flex-item p {
+      font-size: var(--text-300);
+  }
+  .info-list {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0.5em !important;
+  }
+  .info-list li {
+    padding: 0.5em 0;
+    background: var(--color-dark);
+    padding-left: 3em;
+    color: var(--color-cream-light);
+    margin-bottom: 1px;
+    position: relative;
+  }
+  .info-list li:before {
+    content: "➤";
+    position: absolute;
+    left: 1em;
+  }
+  .info-list li h4 {
+    color: var(--color-cream);
+    margin: 0;
+    font-size: 1.2em;
+  }
+  .info-list li p {
+    margin: 0;
+  }
+  .action-link a {
+    text-decoration: none;
+    color: var(--color-dark);
+    transition: 0.3s ease-in-out;
+  }
+  .action-link a:hover {
+    filter: opacity(0.6);
+  }
+  .our-team {
+    background: var(--color-dark);
+    color: var(--color-cream);
+  }
+  .our-team h3 {
+    color: var(--color-cream);
+    padding: 1.5em;
+    margin: 0;
+  }
+  section.site-visit .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 25em;
+    overflow: hidden;
+  }
+  section.our-team .image-background,
+  section.services .image-background {
+    height: 45em;
+    background-size: cover;
+    background-position: center;
+  }
+  section.services .image-background {
+    width: 50%;
+    height: 20em;
+  }
+  section.our-customers .image-container img {
+    background: #003d57;
+  }
+
+  @media only screen and (max-width: 900px) {
+    section.services .image-background {
+      width: 100%;
+    }
+  }
+</style>
+
+<section class="[ hero ] [ bg-dark ]">
+  <img src="{% cloudinary '/location planning/internationexpansion.png', 'w_2000,f_auto' %}" class="hero__background" alt="Location Planning Background">
+  <div class="wrapper">
+    <div class="measure-short">
+      <h1>{{ "Location Planning" | i18n }}</h1>
+      <p>{{ "Whatever the reason you need a location planning service, our mission is to provide you the best data, insight, knowledge, tools, and access to software to optimise performance to enable you to make the right investment." | i18n }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="[ hex-background ] [ pad-top-900 pad-bottom-900 ]">
+  <canvas class="hex-background__canvas"></canvas>
+  <script src="/js/components/hex-background.js" defer></script>
+  <div class="wrapper">
+    <div class="gap-bottom-400">
+      <div class="split-pair">
+        <div class="measure-short">
+          <h2 class="eyebrow">{{ "Location Planning" | i18n }}</h2>
+          <h3 class="text-700">{{ "What is location planning?" | i18n }}</h3>
+
+          <div class="measure-compact">
+            <p>{{ "Location Planning is the process of helping you ensure your brand is in the right locations. Consumers choose to purchase products based on:" | i18n }}</p>
+          </div>
+
+          <ul class="info-list">
+            <li>A need or desire</li>
+            <li>Which brand appeals most?</li>
+            <li>Channel - purchase online or in a physical shop</li>
+            <li>Convenience - How willing are they to travel? How easy is the shop to access?</li>
+            <li>Competitors - Are competitors closer and therefore convenience wins over brand choice</li>
+          </ul>
+
+          <p>Our data and analysis combines all these factors along with the cost of build to determine the optimum location strategy for your business.</p>
+        </div>
+
+        <div class="image-container">
+          <img src="{% cloudinary '/location planning/whatislocationplanning.jpg', 'w_616,f_auto' %}" srcset="{% cloudinary '/location planning/whatislocationplanning.jpg', 'w_616,f_auto,dpr_2.0' %} 2x" class="width-full" alt="What is Location Planning">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-cream-light pad-top-800 pad-bottom-800">
+  <div class="wrapper">
+    <div class="split-pair">
+      <div>
+        <h2>{{ "Why is location planning important?" | i18n }}</h2>
+        <p class="large-text">{{ "Investing in physical stores and online depots are the biggest single investment a retailer or landlord will make. Getting it right is critical. We help you make strategic decisions you can be confident in and help you save money." | i18n }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="[ hex-background ] [ pad-top-900 pad-bottom-500 ]">
+  <script src="/js/components/hex-background.js" defer></script>
+  <div class="wrapper">
+    <div class="gap-bottom-400">
+      <div class="split-pair reverse">
+        <div class="measure-short">
+          <h2 class="eyebrow">{{ "Location Planning" | i18n }}</h2>
+          <h3 class="text-700">{{ "The three pillars of Location Planning" | i18n }}</h3>
+
+          <ul class="info-list">
+            <li>
+              <h4>Demand</h4>
+              <p>How many customers want to purchase the product and where are they?</p>
+            </li>
+            <li>
+              <h4>Supply</h4>
+              <p>Who supplies these products and where are they located.</p>
+            </li>
+            <li>
+              <h4>Time (or Tripcost)</h4>
+              <p>How can the product get from the supplier to the customer e.g. drivetime, online delivery time.</p>
+            </li>
+          </ul>
+
+          <p>
+            We build expenditure (or demand) datasets for the grocery market, fashion, DIY, electrical and out of home food across the globe.
+          </p>
+          <p>
+            We source, store and track hundreds of brand locations across the globe. If we don't have it in our database, we can get it for your users.
+          </p>
+          <p>
+            Whether it is drivetime or walk time we calculate everything required to understand your catchments and potential customers.
+          </p>
+        </div>
+
+        <div>
+          <img src="{% cloudinary '/location planning/locationplanningpillars.jpg', 'w_616,f_auto' %}" srcset="{% cloudinary '/location planning/locationplanningpillars.jpg', 'w_616,f_auto,dpr_2.0' %} 2x" class="width-full" alt="Three Pillars of Location Planning">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="[ hex-background ] [ pad-top-900 pad-bottom-900 ] bg-cream-light our-customers">
+  <canvas class="hex-background__canvas"></canvas>
+  <script src="/js/components/hex-background.js" defer></script>
+  <div class="wrapper">
+    <div class="gap-bottom-400">
+      <div class="split-pair">
+        <div class="measure-short">
+          <h2 class="eyebrow">{{ "Location Planning" | i18n }}</h2>
+          <h3 class="text-700">{{ "Why do our customers come to us?" | i18n }}</h3>
+
+          <div class="measure-compact">
+            <p>{{ "The best location planning combines art and science." | i18n }}</p>
+            <p>{{ "Geolytix is unique in that we have the best data scientists to build bespoke spatial forecasting solutions, but also experienced location planners who can overlap their expertise on micro location and customer behaviour. We are trusted advisors who collaborate with our clients to help them with operational decisions and the property development process." | i18n }}</p>
+            <p>{{ "Our employees love providing insights and analysis on understanding consumers, the market and future business performance. Our solutions are customer-led and future thinking." | i18n }}</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="{% cloudinary '/location planning/whycustomerscometous.png', 'w_616,f_auto' %}" srcset="{% cloudinary '/location planning/whycustomerscometous.png', 'w_616,f_auto,dpr_2.0' %} 2x" class="width-full" alt="Why do our customers come to us?">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="[ hex-background ] [ pad-top-900 pad-bottom-900 ] site-visit">
+  <canvas class="hex-background__canvas"></canvas>
+  <script src="/js/components/hex-background.js" defer></script>
+  <div class="wrapper">
+    <div class="gap-bottom-400">
+      <div class="split-pair reverse">
+        <div class="measure-short">
+          <h2 class="eyebrow">{{ "Location Planning" | i18n }}</h2>
+          <h3 class="text-700">{{ "The Site Visit" | i18n }}</h3>
+
+          <div class="measure-compact">
+            <p>{{ "Our employees provide insight, support our analysis and evaluate a given area by visiting. The store visit is essential in understanding the data and a model recommendation for specific locations. It helps to identify the priority development locations, to compare against site availability and provides an additional level of confidence." | i18n }}</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="{% cloudinary '/location planning/thesitevisit.jpg', 'w_616,f_auto' %}" srcset="{% cloudinary '/location planning/thesitevisit.jpg', 'w_616,f_auto,dpr_2.0' %} 2x" class="width-full" alt="The Site Visit">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-cream-light pad-top-700 pad-bottom-700">
+  <div class="wrapper">
+    <div class="split-pair">
+      <div>
+        <p class="large-text">{{ "At Geolytix, we put together your location strategy based on our modelling expertise and years of experience and market research." | i18n }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="[ hex-background ] [ pad-top-900 pad-bottom-900 ]">
+  <canvas class="hex-background__canvas"></canvas>
+  <script src="/js/components/hex-background.js" defer></script>
+  <div class="wrapper">
+    <div class="gap-bottom-400">
+      <div class="split-pair">
+        <div class="measure-short">
+          <h2 class="eyebrow">{{ "Location Planning" | i18n }}</h2>
+          <h3 class="text-700">{{ "Why does your business need a dedicated location planning strategy?" | i18n }}</h3>
+
+          <div class="measure-compact">
+            <p>{{ "Retailers that truly understand their customers, catchments, market and stores give themselves a competitive advantage. Analysing the right data alongside know-how enables your business to open in the ideal location to gain new customers." | i18n }}</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="{% cloudinary '/location planning/yearsofexperience.jpg', 'w_616,f_auto' %}" srcset="{% cloudinary '/location planning/yearsofexperience.jpg', 'w_616,f_auto,dpr_2.0' %} 2x" class="width-full" alt="Dedication Strategy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-cream-light pad-top-900 pad-bottom-900 services">
+  <div class="wrapper">
+    <div class="text-align-center gap-bottom-800">
+      <div class="measure-compact">
+        <h2 class="text-700">{{ "Our location planning services" | i18n }}</h2>
+      </div>
+    </div>
+
+    <div class="flow">
+      <figure class="gallery-block">
+        <figcaption class="gallery-block__content">
+          <h2 class="eyebrow">{{ "Customer Profiling" | i18n }}</h2>
+          <p>{{ "Understanding the demographics of your customers enables you to identify hot spot areas and locations which other sites (competitor) are supplying. We create profiles that enable you to understand the propensity for different types of customer to shop with your brand." | i18n }}</p>
+        </figcaption>
+
+        <div class="image-background" style='background-image: url("{% cloudinary '/location planning/customerprofiling.jpg', 'w_550,f_auto' %}")'>
+          
+        </div>
+      </figure>
+
+      <figure class="gallery-block">
+        <figcaption class="gallery-block__content">
+          <h2 class="eyebrow">{{ "Key Driver Analysis" | i18n }}</h2>
+          <p>{{ "Key drivers of store performance help you understand over and under performance across your estate in addition to which new locations will be successful. Competition, retail environment, urbanity, customer type, location type (city centre, retail park, local parade, rural) and micro site locations all combine with operational measures." | i18n }}</p>
+          <p>{{ "It is our job to unpick them to provide a transparent fact base for you to work from." | i18n }}</p>
+        </figcaption>
+
+        <img src="{% cloudinary '/location planning/keydriveranalysis.png', 'w_550,f_auto' %}" srcset="{% cloudinary '/location planning/keydriveranalysis.png', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Key Driver Analysis">
+      </figure>
+
+      <figure class="gallery-block">
+        <figcaption class="gallery-block__content">
+          <h2 class="eyebrow">{{ "Sales Cannibalisation" | i18n }}</h2>
+          <p>{{ "Will opening a new site impact the sales of shops nearby? When it does it is an example of sales cannibalisation. If possible we evaluate real world examples of store openings before we build a model to forecast sales performance impacts. Understanding whether you should open in a location to stop a competitor impact is an important investment decision. Not all impacts are the same. A new drive thru or shopping centre location may not hit a high street location nearby if the customer mission to visit is different. Mobility data modelling insights help us to answer these dilemmas." | i18n }}</p>
+        </figcaption>
+
+        <img src="{% cloudinary '/location planning/salescannibalisation.png', 'w_550,f_auto' %}" srcset="{% cloudinary '/location planning/salescannibalisation.png', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Sales Cannibalisation">
+      </figure>
+
+      <figure class="gallery-block">
+        <figcaption class="gallery-block__content">
+          <h2 class="eyebrow">{{ "Catchment Creation" | i18n }}</h2>
+          <p>{{ "Not all stores pull from the same catchments. We can use your customer postcode level data, mobility data or our towns and suburbs data to build the effective market from where potential consumers will travel from." | i18n }}</p>
+        </figcaption>
+
+        <img src="{% cloudinary '/location planning/catchmentcreation.png', 'w_550,f_auto' %}" srcset="{% cloudinary '/location planning/catchmentcreation.png', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Catchment Creation">
+      </figure>
+
+      <figure class="gallery-block">
+        <figcaption class="gallery-block__content">
+          <h2 class="eyebrow">{{ "Store Sales Forecasting" | i18n }}</h2>
+          <p>{{ "Opening a store is one of the single biggest investments you'll make, and this is why many of our customers want to be confident that they make the decision based on factual evidence." | i18n }}</p>
+          <p>{{ "Our data scientists will carry out extensive analysis combining your information with our suite of data. We create bespoke sales forecasting models which are relevant for the use case, whether that be a gravity model, spatial regression, analogue model or a combination." | i18n }}</p>
+        </figcaption>
+
+        <img src="{% cloudinary '/location planning/storesalesforecasting.png', 'w_550,f_auto' %}" srcset="{% cloudinary '/location planning/storesalesforecasting.png', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Store Sales Forecasting">
+      </figure>
+
+      <figure class="gallery-block">
+        <figcaption class="gallery-block__content">
+          <h2 class="eyebrow">{{ "Network Blueprints" | i18n }}</h2>
+          <p>{{ "Understanding how many stores your business can reach is a key part in your strategic growth plan. In addition, a clear ranked output of the highest potential locations will enable your surveyors to prioritise the best available sites." | i18n }}</p>
+          <p>{{ "The benefits of a network strategy, especially those that include different scenarios for different strategic routes are valuable in the short and long term." | i18n }}</p>
+        </figcaption>
+
+        <img src="{% cloudinary '/location planning/networkblueprints.png', 'w_550,f_auto' %}" srcset="{% cloudinary '/location planning/networkblueprints.png', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Network Blueprints">
+      </figure>
+
+      <figure class="gallery-block">
+        <figcaption class="gallery-block__content">
+          <h2 class="eyebrow">{{ "International Expansion" | i18n }}</h2>
+          <p>{{ "What new country should we enter next? Your future business growth is dependent on making the best decisions about network expansion." | i18n }}</p>
+          <p>{{ "We have helped 100s of companies understand the demand potential across different countries, how consumers differ and key insights around the potential number of sites that could open. The benefits of international research can be huge. Our global database and wide network of offices has helped us to carry out projects in over 60 countries." | i18n }}</p>
+        </figcaption>
+
+        <img src="{% cloudinary '/location planning/internationexpansion.png', 'w_550,f_auto' %}" srcset="{% cloudinary '/location planning/internationexpansion.png', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="International Expansion">
+      </figure>
+
+      <div class="action-link">
+        <a href="/">
+          <p class="large-text text-align-center">See examples of our success stories here</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="our-team [ hex-background ]">
+  <h3 class="text-700 text-align-center">Get in touch with our location planning professionals today</h3>
+  
+  <div class="image-background" style='background-image: url("{% cloudinary '/location planning/getintouch.jpg', 'w_2000,f_auto' %}");'>
+  </div>
+</section>
